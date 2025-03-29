@@ -1,0 +1,74 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    overflow-x: hidden;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-image: url('/saacid-ahmed-I7c0n1_7dZs-unsplash\ \(1\).jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+     /* Soft blue overlay */
+    z-index: 1;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    z-index: 10;
+}
+.header {
+    text-align: center;
+    padding: 40px 0;
+}
+.header h1 {
+    color: white;
+    margin-bottom: 15px;
+    font-size: 2.5rem;
+}
+.header p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.1rem;
+}
+.cities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+.city-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+.city-card:hover {
+    transform: scale(1.05);
+}
+.city-card-title {
+    color: white;
+    margin-bottom: 15px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 10px;
+    font-size: 1.5rem;
+}
+.city-card-description {
+    color: rgba(255, 255, 255, 0.9);
+}
